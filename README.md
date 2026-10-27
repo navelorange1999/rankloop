@@ -4,7 +4,9 @@ Continuous SEO & GEO monitoring, analysis, and AI-powered optimization.
 
 rankloop 是面向个人与小型团队、支持多站点的可自行部署 SEO / GEO 持续监控项目。通过搜索表现、页面巡检和 AI 回答采样积累证据，帮助使用者发现变化、确定优化动作，并持续追踪结果。
 
-**当前状态：设计阶段。仓库目前仅包含文档，尚未实现应用、连接器或部署配置。** 下文中的功能、技术栈和验收项描述的是 MVP 目标，不代表已经可用。
+**当前已实现：基于 GitHub Actions 的页面扫描 MVP。** 支持 CMS 发布事件增量扫描、页面版本与内容指纹校验、定时补偿检查和结果产物。网站 PR 可复用扫描器并运行 Lighthouse CI。尚未实现完整平台、GSC 数据接入或真实 GEO 回答采样。
+
+实施范围、配置权限、运行方式与限制见 [Actions MVP 运维说明](docs/actions-mvp.md)。使用 Node.js 24.22.1，运行 `npm ci --ignore-scripts`、`npm test` 和 `npm run scan`。生产扫描固定为当前接入站点；报告保存到 `artifacts/`，不提交监控数据。
 
 ```mermaid
 flowchart LR

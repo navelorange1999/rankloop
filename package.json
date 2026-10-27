@@ -1,0 +1,38 @@
+{
+  "name": "rankloop",
+  "version": "0.1.0",
+  "description": "Continuous SEO & GEO monitoring, analysis, and AI-powered optimization.",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "scan": "node scripts/scan.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navelorange1999/rankloop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/navelorange1999/rankloop/issues"
+  },
+  "homepage": "https://github.com/navelorange1999/rankloop#readme",
+  "dependencies": {
+    "cheerio": "1.2.0",
+    "robots-parser": "3.0.1"
+  },
+  "devDependencies": {
+    "@lhci/cli": "0.15.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "overrides": {
+    "lighthouse": "13.5.0",
+    "tmp": "0.2.7",
+    "uuid": "11.1.1",
+    "basic-ftp": "6.2.3"
+  }
+}

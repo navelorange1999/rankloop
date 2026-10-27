@@ -1,0 +1,6 @@
+node_modules/
+artifacts/
+.lighthouseci/
+.env
+.env.*
+!.env.example
